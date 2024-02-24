@@ -1,0 +1,11 @@
+{
+  "name": "@haiper/colors",
+  "version": "0.1.0",
+  "description": "Haiper colors",
+  "main": "color.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yudu Ban <banyudu@gmail.com>",
+  "license": "ISC"
+}
