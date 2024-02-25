@@ -221,7 +221,7 @@ export const blue = {
 }
 
 export const palette = {
-  whites,
+  white,
   black: {
     DEFAULT: "#000000",
   },
