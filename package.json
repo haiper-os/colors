@@ -8,9 +8,13 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
+    "lint": "standard --fix",
     "postversion": "git push --follow-tags && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Yudu Ban <banyudu@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
 }

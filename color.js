@@ -21,7 +21,7 @@ const variables = {
   'white-700': 'rgba(255, 255, 255, 0.7)',
   'white-800': 'rgba(255, 255, 255, 0.8)',
   'white-900': 'rgba(255, 255, 255, 0.9)',
-  'white': '#ffffff',
+  white: '#ffffff',
   'band-50': '#f4f1fd',
   'band-100': '#e5dfff',
   'band-200': '#cac0ff',
@@ -93,7 +93,7 @@ const variables = {
   'blue-600': '#0090d6',
   'blue-700': '#0075ad',
   'blue-800': '#005985',
-  'blue-900': '#003e5c',
+  'blue-900': '#003e5c'
 }
 
 const genColorWithVar = (color, shade) => `var(--hp-${color}-${shade}, ${variables[`${color}-${shade}`]})`
@@ -109,7 +109,7 @@ export const gray = {
   600: genColorWithVar('gray', 600),
   700: genColorWithVar('gray', 700),
   800: genColorWithVar('gray', 800),
-  900: genColorWithVar('gray', 900),
+  900: genColorWithVar('gray', 900)
 }
 
 export const white = {
@@ -124,7 +124,7 @@ export const white = {
   700: genColorWithVar('white', 700),
   800: genColorWithVar('white', 800),
   900: genColorWithVar('white', 900),
-  DEFAULT: variables['white'],
+  DEFAULT: variables.white
 }
 
 export const band = {
@@ -138,7 +138,7 @@ export const band = {
   700: genColorWithVar('band', 700),
   800: genColorWithVar('band', 800),
   900: genColorWithVar('band', 900),
-  Disabled: variables['band-disabled'],
+  Disabled: variables['band-disabled']
 }
 
 export const red = {
@@ -152,7 +152,7 @@ export const red = {
   700: genColorWithVar('red', 700),
   800: genColorWithVar('red', 800),
   900: genColorWithVar('red', 900),
-  Disabled: variables['red-disabled'],
+  Disabled: variables['red-disabled']
 }
 
 export const yellow = {
@@ -165,7 +165,7 @@ export const yellow = {
   600: genColorWithVar('yellow', 600),
   700: genColorWithVar('yellow', 700),
   800: genColorWithVar('yellow', 800),
-  900: genColorWithVar('yellow', 900),
+  900: genColorWithVar('yellow', 900)
 }
 
 export const green = {
@@ -178,7 +178,7 @@ export const green = {
   600: genColorWithVar('green', 600),
   700: genColorWithVar('green', 700),
   800: genColorWithVar('green', 800),
-  900: genColorWithVar('green', 900),
+  900: genColorWithVar('green', 900)
 }
 
 export const orange = {
@@ -191,7 +191,7 @@ export const orange = {
   600: genColorWithVar('orange', 600),
   700: genColorWithVar('orange', 700),
   800: genColorWithVar('orange', 800),
-  900: genColorWithVar('orange', 900),
+  900: genColorWithVar('orange', 900)
 }
 
 export const pink = {
@@ -204,7 +204,7 @@ export const pink = {
   600: genColorWithVar('pink', 600),
   700: genColorWithVar('pink', 700),
   800: genColorWithVar('pink', 800),
-  900: genColorWithVar('pink', 900),
+  900: genColorWithVar('pink', 900)
 }
 
 export const blue = {
@@ -217,85 +217,85 @@ export const blue = {
   600: genColorWithVar('blue', 600),
   700: genColorWithVar('blue', 700),
   800: genColorWithVar('blue', 800),
-  900: genColorWithVar('blue', 900),
+  900: genColorWithVar('blue', 900)
 }
 
 export const palette = {
   white,
   black: {
-    DEFAULT: "#000000",
+    DEFAULT: '#000000'
   },
-  blue: blue,
-  gray: gray,
-  green: green,
-  orange: orange,
-  pink: pink,
-  purple: purple,
-  red: red,
-  yellow: yellow,
-};
+  blue,
+  gray,
+  green,
+  orange,
+  pink,
+  purple: band,
+  red,
+  yellow
+}
 
 /* -------------------------------------------------------------------------- */
 export const themableColorsLight = {
-  background: "#FFFFFF",
+  background: '#FFFFFF',
   foreground: palette.gray[900],
 
   primary: {
     ...palette.purple,
-    DEFAULT: palette.purple[500],
+    DEFAULT: palette.purple[500]
   },
 
   secondary: {
     ...palette.gray,
-    DEFAULT: palette.gray[900],
+    DEFAULT: palette.gray[900]
   },
 
   surface: {
     ...palette.gray,
-    DEFAULT: palette.gray[50],
+    DEFAULT: palette.gray[50]
   },
 
   destructive: {
-    ...palette.red,
-  },
-};
+    ...palette.red
+  }
+}
 
 export const themableColorsDark = {
   background: palette.gray[900],
-  foreground: "#FFFFFF",
+  foreground: '#FFFFFF',
 
   primary: {
     ...palette.purple,
     DEFAULT: palette.purple[400],
-    600: palette.purple[500],
+    600: palette.purple[500]
   },
 
   secondary: {
     ...palette.white,
     900: palette.gray[900],
-    DEFAULT: palette.white[900],
+    DEFAULT: palette.white[900]
   },
 
   surface: {
-    50: "rgba(255,255,255, 0.1)",
-    100: "rgba(255,255,255, 0.2)",
-    200: "rgba(255,255,255, 0.3)",
-    300: "rgba(255,255,255, 0.4)",
-    400: "rgba(255,255,255, 0.5)",
-    500: "rgba(255,255,255, 0.5)",
-    600: "rgba(255,255,255, 0.7)",
-    700: "rgba(255,255,255, 0.8)",
-    800: "rgba(255,255,255, 0.9)",
-    900: "#FFFFFF",
-    DEFAULT: "rgba(255,255,255, 0.1)",
+    50: 'rgba(255,255,255, 0.1)',
+    100: 'rgba(255,255,255, 0.2)',
+    200: 'rgba(255,255,255, 0.3)',
+    300: 'rgba(255,255,255, 0.4)',
+    400: 'rgba(255,255,255, 0.5)',
+    500: 'rgba(255,255,255, 0.5)',
+    600: 'rgba(255,255,255, 0.7)',
+    700: 'rgba(255,255,255, 0.8)',
+    800: 'rgba(255,255,255, 0.9)',
+    900: '#FFFFFF',
+    DEFAULT: 'rgba(255,255,255, 0.1)'
   },
 
   destructive: {
-    ...palette.red,
-  },
-};
+    ...palette.red
+  }
+}
 
 export const themableColors = {
   light: themableColorsLight,
-  dark: themableColorsDark,
-};
+  dark: themableColorsDark
+}
