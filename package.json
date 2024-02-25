@@ -1,6 +1,6 @@
 {
   "name": "@haiper/colors",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Haiper colors",
   "main": "color.js",
   "publishConfig": {
