@@ -96,7 +96,8 @@ const variables = {
   'blue-900': '#003e5c'
 }
 
-const genColorWithVar = (color, shade) => `var(--hp-${color}-${shade}, ${variables[`${color}-${shade}`]})`
+// const genColorWithVar = (color, shade) => `var(--hp-${color}-${shade}, ${variables[`${color}-${shade}`]})`
+const genColorWithVar = (color, shade) => variables[`${color}-${shade}`]
 
 // export colors with variables
 export const gray = {
@@ -109,7 +110,8 @@ export const gray = {
   600: genColorWithVar('gray', 600),
   700: genColorWithVar('gray', 700),
   800: genColorWithVar('gray', 800),
-  900: genColorWithVar('gray', 900)
+  900: genColorWithVar('gray', 900),
+  DEFAULT: genColorWithVar('gray', 500)
 }
 
 export const white = {
@@ -138,6 +140,7 @@ export const band = {
   700: genColorWithVar('band', 700),
   800: genColorWithVar('band', 800),
   900: genColorWithVar('band', 900),
+  DEFAULT: genColorWithVar('band', 500),
   Disabled: variables['band-disabled']
 }
 
@@ -152,6 +155,7 @@ export const red = {
   700: genColorWithVar('red', 700),
   800: genColorWithVar('red', 800),
   900: genColorWithVar('red', 900),
+  DEFAULT: genColorWithVar('red', 500),
   Disabled: variables['red-disabled']
 }
 
@@ -165,7 +169,8 @@ export const yellow = {
   600: genColorWithVar('yellow', 600),
   700: genColorWithVar('yellow', 700),
   800: genColorWithVar('yellow', 800),
-  900: genColorWithVar('yellow', 900)
+  900: genColorWithVar('yellow', 900),
+  DEFAULT: genColorWithVar('yellow', 500)
 }
 
 export const green = {
@@ -178,7 +183,8 @@ export const green = {
   600: genColorWithVar('green', 600),
   700: genColorWithVar('green', 700),
   800: genColorWithVar('green', 800),
-  900: genColorWithVar('green', 900)
+  900: genColorWithVar('green', 900),
+  DEFAULT: genColorWithVar('green', 500)
 }
 
 export const orange = {
@@ -191,7 +197,8 @@ export const orange = {
   600: genColorWithVar('orange', 600),
   700: genColorWithVar('orange', 700),
   800: genColorWithVar('orange', 800),
-  900: genColorWithVar('orange', 900)
+  900: genColorWithVar('orange', 900),
+  DEFAULT: genColorWithVar('orange', 500)
 }
 
 export const pink = {
@@ -204,7 +211,8 @@ export const pink = {
   600: genColorWithVar('pink', 600),
   700: genColorWithVar('pink', 700),
   800: genColorWithVar('pink', 800),
-  900: genColorWithVar('pink', 900)
+  900: genColorWithVar('pink', 900),
+  DEFAULT: genColorWithVar('pink', 500)
 }
 
 export const blue = {
@@ -217,7 +225,8 @@ export const blue = {
   600: genColorWithVar('blue', 600),
   700: genColorWithVar('blue', 700),
   800: genColorWithVar('blue', 800),
-  900: genColorWithVar('blue', 900)
+  900: genColorWithVar('blue', 900),
+  DEFAULT: genColorWithVar('blue', 500)
 }
 
 export const palette = {
